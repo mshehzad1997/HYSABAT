@@ -1,0 +1,40 @@
+﻿@model HYSABAT.Models.Account
+
+@{
+    ViewData["Title"] = "AccountCreate";
+}
+
+<h1>AccountCreate</h1>
+
+<h4>Account</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="AccountCreate">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="AccountTitle" class="control-label"></label>
+                <input asp-for="AccountTitle" class="form-control" />
+                <span asp-validation-for="AccountTitle" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AccountDescription" class="control-label"></label>
+                <input asp-for="AccountDescription" class="form-control" />
+                <span asp-validation-for="AccountDescription" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AccountImagePath" class="control-label"></label>
+                <input asp-for="AccountImagePath" class="form-control" />
+                <span asp-validation-for="AccountImagePath" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
