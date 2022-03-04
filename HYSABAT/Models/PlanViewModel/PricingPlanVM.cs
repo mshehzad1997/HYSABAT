@@ -36,5 +36,6 @@ namespace HYSABAT.Models.PlanViewModel
         public string planfeatures4 { get; set; }
        
         public string planfeatures5 { get; set; }
+        public string planfeatures6 { get; set; }
     }
 }
